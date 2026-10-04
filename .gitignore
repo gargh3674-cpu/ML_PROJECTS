@@ -1,0 +1,12 @@
+# Ignore everything in the projects folder
+*
+
+# Keep this Git configuration
+!.gitignore
+
+# Keep the heart disease project
+!heart_disease_prediction/
+!heart_disease_prediction/**
+
+# Ignore macOS files everywhere
+.DS_Store
