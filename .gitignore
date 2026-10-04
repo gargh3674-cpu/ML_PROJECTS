@@ -11,3 +11,7 @@
 # Ignore macOS files everywhere
 .DS_Store
 
+
+
+!new_project/
+!new_project/**
