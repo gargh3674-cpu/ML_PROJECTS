@@ -1,4 +1,4 @@
-# streamlit run app.py
+# python -m streamlit run app.py
 
 ## ye banae ke baad isse stramlit pe deploy karo per usse pehle aapko apni git hub ki repository banani hogi.
 
