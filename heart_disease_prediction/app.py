@@ -25,13 +25,16 @@ Shareable public link 🔗
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
 # -----------------------------
 # Load trained ML artifacts
 # -----------------------------
-model = joblib.load("logistic_heart.pkl")
-scaler = joblib.load("scaler.pkl")
-columns = joblib.load("columns.pkl")
+BASE_DIR = Path(__file__).resolve().parent
+
+model = joblib.load(BASE_DIR / "logistic_heart.pkl")
+scaler = joblib.load(BASE_DIR / "scaler.pkl")
+columns = joblib.load(BASE_DIR / "columns.pkl")
 
 st.set_page_config(
     page_title="Heart Disease Prediction",
